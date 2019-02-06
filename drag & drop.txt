@@ -15,6 +15,7 @@ public class DragAndDropTest {
 		WebElement dstwb=driver.findElement(By.id("droptarget"));
 		Actions act=new Actions(driver);
 		act.dragAndDrop(srcwb,dstwb).perform();
+                driver.close();
 
 	}
 
