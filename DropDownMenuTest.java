@@ -16,7 +16,7 @@ public class DropDownMenuTest {
 		//Step2: Create an Object to ACTIONS class
 		Actions act=new Actions(driver);
 		//Step3: take the Mouse Cursor middle of the Element & Execute
-		((Actions) act).moveToElement(dwb).perform();
+		act.moveToElement(dwb).perform();
 		//click on "Books" sub menue LINK
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Books']")).click();
